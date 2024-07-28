@@ -71,7 +71,7 @@ class scoreboard extends uvm_scoreboard;
 	function void write_item(sequence_item s);
 		false_memory[s.addr] = s.data_in;
     data_str = $sformatf("FALSE_MEMORY: ADDRESS: %0d  WRITTEN: %0d ", s.addr, false_memory[s.addr]);
-    `uvm_error("SCOREBOARD", {"WRITE_PASS: ", data_str})
+    `uvm_info("SCOREBOARD", {"WRITE_PASS: ", data_str}, UVM_HIGH)
 		`uvm_info("SCOREBOARD", {"WRITE_PASS: ", s.convert2string()}, UVM_HIGH)
 	endfunction : write_item	
 

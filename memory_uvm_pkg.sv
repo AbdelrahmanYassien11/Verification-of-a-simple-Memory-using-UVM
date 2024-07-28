@@ -1,4 +1,4 @@
-package a7a;
+package memory_pkg;
 
 	import uvm_pkg::*;
 	`include "uvm_macros.svh"
@@ -35,4 +35,4 @@ package a7a;
 	`include "read_test.svh"
 
 
-endpackage : a7a
+endpackage : memory_pkg

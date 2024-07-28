@@ -42,10 +42,8 @@
 	function void end_of_elaboration_phase(uvm_phase phase);
 		super.end_of_elaboration_phase(phase);
 		scoreboard_h.set_report_verbosity_level_hier(UVM_HIGH);
-		//coverage_h.analysis_export.get_connected_to();
-		//coverage_h.analysis_export.get_provided_to();
-		//scoreboard_h.tlm_analysis_export.get_connected_to();
-		//scoreboard_h.tlm_analysis_export.get_provided_to();
+		//coverage_h.analysis_export.get_provided_to(list);
+		//scoreboard_h.tlm_analysis_export.get_provided_to(list);
 		$display("my_monitor end_of_elaboration_phase");
 	endfunction
 

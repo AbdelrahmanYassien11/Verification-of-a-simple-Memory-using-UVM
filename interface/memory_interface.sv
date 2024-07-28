@@ -2,7 +2,7 @@ interface inf (
     input logic clk
     );
 
-import a7a::*;
+import memory_pkg::*;
     
  logic en;
  logic rst;

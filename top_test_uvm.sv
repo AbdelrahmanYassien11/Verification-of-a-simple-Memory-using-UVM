@@ -1,7 +1,7 @@
 //`include "memory_interface.sv"
 module top_test_uvm();
 	import uvm_pkg::*;
-	import a7a::*;
+	import memory_pkg::*;
 
 
 	bit clk;

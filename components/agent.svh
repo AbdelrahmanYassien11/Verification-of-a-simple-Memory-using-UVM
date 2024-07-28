@@ -40,8 +40,8 @@ class agent extends uvm_agent;
 
 	function void end_of_elaboration_phase(uvm_phase phase);
 		super.end_of_elaboration_phase(phase);
-		//tlm_analysis_port.get_connected_to();
-		//tlm_analysis_port.get_provided_to();
+		//tlm_analysis_port.get_connected_to(list);
+		//tlm_analysis_port.get_provided_to(list);
 		$display("my_monitor end_of_elaboration_phase");
 	endfunction
 
